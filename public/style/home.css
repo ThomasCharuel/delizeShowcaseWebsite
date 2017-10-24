@@ -389,6 +389,33 @@ template {
 [hidden] {
   display: none; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 80px;
+  line-height: 80px; }
+
+.header__logo {
+  font-weight: 700;
+  padding: 0 25px;
+  float: left; }
+
+.menu {
+  float: right; }
+  .menu a {
+    padding: 0 10px; }
+  .menu a:hover {
+    color: blue; }
+
+.site-content {
+  padding-top: 80px; }
+
 html {
   background: red; }
 

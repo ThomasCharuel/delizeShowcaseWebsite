@@ -1,0 +1,26 @@
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: $header-bg;
+  height: 80px;
+  line-height: 80px;
+}
+
+.header__logo{
+  font-weight: 700;
+  padding: 0 25px;
+  float: left;
+}
+
+.menu{
+  float: right;
+
+  a{
+    padding: 0 10px;
+  }
+
+  a:hover{
+    color: blue;
+  }
+}
