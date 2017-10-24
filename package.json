@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
+    "start": "live-server --open='public/index.html' | sass --watch src/sass/pages/_home.scss:public/style/home.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thomas Charuel",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "sass": "^1.0.0-beta.2"
   }
 }
