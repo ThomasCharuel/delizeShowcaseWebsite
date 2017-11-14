@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Lato:300,400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -393,6 +394,31 @@ a {
   text-decoration: none;
   color: inherit; }
 
+body {
+  font-family: 'Lato', sans-serif;
+  color: #342C2F;
+  font-size: 1.2em; }
+  body h1, body h2, body h3, body h4 {
+    font-family: 'Montserrat', sans-serif; }
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  border: none;
+  cursor: pointer; }
+
+.btn-dark-blue {
+  background: #1a4768;
+  transition: all 0.3s ease; }
+  .btn-dark-blue:hover {
+    background: #123147; }
+  .btn-dark-blue:active {
+    background: #010102; }
+
 .header {
   position: fixed;
   left: 0;
@@ -416,7 +442,58 @@ a {
 .site-content {
   padding-top: 80px; }
 
-html {
-  background: red; }
+.footer {
+  background: #f9f9f9;
+  padding: 40px 20px; }
+  .footer h2 {
+    color: #102B3F;
+    text-align: center; }
+  .footer p {
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin-top: 0px; }
+  .footer .bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px auto;
+    max-width: 700px; }
+  .footer .contactBloc .contactLink {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #1a4768;
+    transition-duration: 0.3s; }
+    .footer .contactBloc .contactLink:hover {
+      color: #256390; }
+  .footer .followBloc navbar {
+    margin-top: 5px; }
+    .footer .followBloc navbar a {
+      margin: 0px 15px;
+      color: #102B3F;
+      transition-duration: 0.5s; }
+      .footer .followBloc navbar a:hover {
+        color: #1a4768; }
+  .footer .newsletterBloc {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer .newsletterBloc input {
+      width: 100%;
+      appearance: none;
+      box-sizing: border-box;
+      display: inline-block;
+      outline: 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9em;
+      font-weight: 300;
+      border-radius: 5px;
+      padding: 8px 10px;
+      border: solid 1px #1a4768;
+      color: #102B3F; }
+    .footer .newsletterBloc input::placeholder {
+      color: #9f8d94; }
+    .footer .newsletterBloc button {
+      margin-top: 10px;
+      width: 100%; }
 
 /*# sourceMappingURL=home.css.map */
