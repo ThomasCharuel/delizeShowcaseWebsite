@@ -1,4 +1,58 @@
 @import "../base/module";
+@import "../helpers/variables";
 @import "../components/buttons";
 @import "../components/navigation";
 @import "../layout/module";
+
+.detailedConceptWrapper{
+  padding: 30px 0px;
+  >.bloc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    
+    .contentWrapper, .imageWrapper{
+      width: 40%;
+      padding: 20px;
+      line-height: 140%;
+      .sectionTitle{
+        color: $dark-blue;
+        @media screen and (max-width: $sm-width){
+          text-align: center;
+        }
+      }
+      p{
+        color: lighten($black, 20%);
+        font-size: 0.9em;
+        font-weight: 300;
+        @media screen and (max-width: $sm-width){
+          text-align: justify;
+        }
+      }
+
+      @media screen and (max-width: $sm-width){
+        &.contentWrapper{
+          width: 100%;
+        }
+        &.imageWrapper{
+          display: none;
+        }
+      }
+    }
+    .imageWrapper{
+      img{
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    &.cuisinierWrapper{
+      text-align: right;
+    }
+    &.foodWrapper{
+      text-align: left;
+    }
+  }
+}
