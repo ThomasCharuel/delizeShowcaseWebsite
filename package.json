@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --open='public/index.html' | sass --watch src/sass:public/style",
-    "sass": "sass src/sass/pages/_home.scss:public/style/home.css",
+    "start": "live-server --open='public/index.html'",
+    "sass": "node-sass src/sass/pages/_home.scss public/style/home.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thomas Charuel",
