@@ -31,33 +31,17 @@
 }
 
 .detailedConceptWrapper{
-  padding: 30px 0px;
+  padding: 60px 0px;
   >.bloc{
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
     align-items: center;
-    justify-content: center;
-    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 20px;
+
     .contentWrapper, .imageWrapper{
-      width: 40%;
-      padding: 40px;
-      line-height: 140%;
-      .sectionTitle{
-        color: $dark-blue;
-        @media screen and (max-width: $sm-width){
-          text-align: center;
-        }
-      }
-      p{
-        color: lighten($black, 20%);
-        font-size: 0.9em;
-        font-weight: 300;
-        @media screen and (max-width: $sm-width){
-          text-align: justify;
-        }
-      }
+      width: 35%;
+      text-align: center;
 
       @media screen and (max-width: $sm-width){
         &.contentWrapper{
@@ -68,37 +52,109 @@
         }
       }
     }
-    .imageWrapper{
-      img{
-        width: 100%;
-        border-radius: 50%;
+
+    .sectionTitle, p, img{
+      width: 100%;
+      margin: auto;
+    }
+    .contentWrapper{
+      line-height: 140%;
+      .sectionTitle{
+        color: $dark-blue;
+        margin-bottom: 15px;
+      }
+      p{
+        color: lighten($black, 20%);
+        font-size: 1em;
+        font-weight: 300;
       }
     }
-    &.cuisinierWrapper{
-      text-align: right;
-    }
-    &.foodWrapper{
-      text-align: left;
+
+    .imageWrapper{
+      img{
+        border-radius: 50%;
+      }
     }
   }
 }
 
 .featuresWrapper{
-  .featureWrapper{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    background: $light-beige;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: lighten($light-beige, 5%);
+  padding: 30px 0px;
 
-    .featureDescription{
-      text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .screenWrapper{
+    .iphoneContainer{
+      max-width: 400px;
+      position: relative;
+      .iphoneImg{
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+      }
+      .featureScreen{
+        height: auto;
+        width: 52%;
+        top: 19%;
+        left: 24.5%;
+        position: absolute;
+        overflow: hidden;
+
+        img{
+          max-width: 100%;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
+  .featuresPanel{
+    text-align: center;
+    width: 500px;
+    .featureWrapper{
       line-height: 140%;
-      padding: 30px;
-      color: $red;
-      font-weight: 300;
+      .featureTitle{
+        color: $red;
+        margin-bottom: 15px;
+      }
+      .featureDescription{
+        color: lighten($black, 20%);
+        font-size: 1em;
+        font-weight: 300;
+      }
+    }
+    .featuresList{
+      margin-top: 80px;
+      nav{
+        display: flex;
+        justify-content: space-evenly;
+        .featureLink{
+          img{
+            max-width: 40px;
+          }
+
+          h3{
+            font-size: 1em;
+            color: lighten($black, 20%);
+            transition-duration: 0.6s;
+          }
+
+          &.active{
+            h3{
+              color: $red;
+            }
+          }
+          &:hover{
+            h3{
+              color: lighten($black, 40%);
+            }
+          }
+        }
+      }
     }
   }
 }

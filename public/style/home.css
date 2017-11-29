@@ -519,54 +519,85 @@ body {
       padding: 40px 20px; } }
 
 .detailedConceptWrapper {
-  padding: 30px 0px; }
+  padding: 60px 0px; }
   .detailedConceptWrapper > .bloc {
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
     align-items: center;
-    justify-content: center; }
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 20px; }
     .detailedConceptWrapper > .bloc .contentWrapper, .detailedConceptWrapper > .bloc .imageWrapper {
-      width: 40%;
-      padding: 40px;
-      line-height: 140%; }
-      .detailedConceptWrapper > .bloc .contentWrapper .sectionTitle, .detailedConceptWrapper > .bloc .imageWrapper .sectionTitle {
-        color: #102B3F; }
-        @media screen and (max-width: 576px) {
-          .detailedConceptWrapper > .bloc .contentWrapper .sectionTitle, .detailedConceptWrapper > .bloc .imageWrapper .sectionTitle {
-            text-align: center; } }
-      .detailedConceptWrapper > .bloc .contentWrapper p, .detailedConceptWrapper > .bloc .imageWrapper p {
-        color: #6b5b61;
-        font-size: 0.9em;
-        font-weight: 300; }
-        @media screen and (max-width: 576px) {
-          .detailedConceptWrapper > .bloc .contentWrapper p, .detailedConceptWrapper > .bloc .imageWrapper p {
-            text-align: justify; } }
+      width: 35%;
+      text-align: center; }
       @media screen and (max-width: 576px) {
         .detailedConceptWrapper > .bloc .contentWrapper.contentWrapper, .detailedConceptWrapper > .bloc .imageWrapper.contentWrapper {
           width: 100%; }
         .detailedConceptWrapper > .bloc .contentWrapper.imageWrapper, .detailedConceptWrapper > .bloc .imageWrapper.imageWrapper {
           display: none; } }
-    .detailedConceptWrapper > .bloc .imageWrapper img {
+    .detailedConceptWrapper > .bloc .sectionTitle, .detailedConceptWrapper > .bloc p, .detailedConceptWrapper > .bloc img {
       width: 100%;
+      margin: auto; }
+    .detailedConceptWrapper > .bloc .contentWrapper {
+      line-height: 140%; }
+      .detailedConceptWrapper > .bloc .contentWrapper .sectionTitle {
+        color: #102B3F;
+        margin-bottom: 15px; }
+      .detailedConceptWrapper > .bloc .contentWrapper p {
+        color: #6b5b61;
+        font-size: 1em;
+        font-weight: 300; }
+    .detailedConceptWrapper > .bloc .imageWrapper img {
       border-radius: 50%; }
-    .detailedConceptWrapper > .bloc.cuisinierWrapper {
-      text-align: right; }
-    .detailedConceptWrapper > .bloc.foodWrapper {
-      text-align: left; }
 
-.featuresWrapper .featureWrapper {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  background: #F6EEDD;
+.featuresWrapper {
+  background-color: #fbf8f1;
+  padding: 30px 0px;
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .featuresWrapper .featureWrapper .featureDescription {
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .featuresWrapper .screenWrapper .iphoneContainer {
+    max-width: 400px;
+    position: relative; }
+    .featuresWrapper .screenWrapper .iphoneContainer .iphoneImg {
+      overflow: hidden;
+      max-width: 100%;
+      height: auto; }
+    .featuresWrapper .screenWrapper .iphoneContainer .featureScreen {
+      height: auto;
+      width: 52%;
+      top: 19%;
+      left: 24.5%;
+      position: absolute;
+      overflow: hidden; }
+      .featuresWrapper .screenWrapper .iphoneContainer .featureScreen img {
+        max-width: 100%;
+        border-radius: 3px;
+        border-color: 2px solid black; }
+  .featuresWrapper .featuresPanel {
     text-align: center;
-    line-height: 140%;
-    padding: 30px;
-    color: #CD0B24;
-    font-weight: 300; }
+    width: 500px; }
+    .featuresWrapper .featuresPanel .featureWrapper {
+      line-height: 140%; }
+      .featuresWrapper .featuresPanel .featureWrapper .featureTitle {
+        color: #CD0B24;
+        margin-bottom: 15px; }
+      .featuresWrapper .featuresPanel .featureWrapper .featureDescription {
+        color: #6b5b61;
+        font-size: 1em;
+        font-weight: 300; }
+    .featuresWrapper .featuresPanel .featuresList {
+      margin-top: 80px; }
+      .featuresWrapper .featuresPanel .featuresList nav {
+        display: flex;
+        justify-content: space-evenly; }
+        .featuresWrapper .featuresPanel .featuresList nav .featureLink img {
+          max-width: 40px; }
+        .featuresWrapper .featuresPanel .featuresList nav .featureLink h3 {
+          font-size: 1em;
+          color: #6b5b61;
+          transition-duration: 0.6s; }
+        .featuresWrapper .featuresPanel .featuresList nav .featureLink.active h3 {
+          color: #CD0B24; }
+        .featuresWrapper .featuresPanel .featuresList nav .featureLink:hover h3 {
+          color: #9f8d94; }
