@@ -421,6 +421,7 @@ body {
 
 .header {
   position: fixed;
+  z-index: 10;
   left: 0;
   right: 0;
   background-color: white;
@@ -551,13 +552,13 @@ body {
 
 .featuresWrapper {
   background-color: #fbf8f1;
-  padding: 30px 0px;
+  padding: 80px 0px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly; }
   .featuresWrapper .screenWrapper .iphoneContainer {
-    max-width: 400px;
+    max-width: 250px;
     position: relative; }
     .featuresWrapper .screenWrapper .iphoneContainer .iphoneImg {
       overflow: hidden;
@@ -565,15 +566,14 @@ body {
       height: auto; }
     .featuresWrapper .screenWrapper .iphoneContainer .featureScreen {
       height: auto;
-      width: 52%;
-      top: 19%;
-      left: 24.5%;
+      width: 88%;
+      top: 10.5%;
+      left: 6.5%;
       position: absolute;
       overflow: hidden; }
       .featuresWrapper .screenWrapper .iphoneContainer .featureScreen img {
         max-width: 100%;
-        border-radius: 3px;
-        border-color: 2px solid black; }
+        border-radius: 3px; }
   .featuresWrapper .featuresPanel {
     text-align: center;
     width: 500px; }
@@ -596,7 +596,8 @@ body {
         .featuresWrapper .featuresPanel .featuresList nav .featureLink h3 {
           font-size: 1em;
           color: #6b5b61;
-          transition-duration: 0.6s; }
+          transition-duration: 0.6s;
+          font-weight: 300; }
         .featuresWrapper .featuresPanel .featuresList nav .featureLink.active h3 {
           color: #CD0B24; }
         .featuresWrapper .featuresPanel .featuresList nav .featureLink:hover h3 {

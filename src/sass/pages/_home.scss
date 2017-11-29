@@ -80,7 +80,7 @@
 
 .featuresWrapper{
   background-color: lighten($light-beige, 5%);
-  padding: 30px 0px;
+  padding: 80px 0px;
 
   display: flex;
   align-items: center;
@@ -89,7 +89,7 @@
 
   .screenWrapper{
     .iphoneContainer{
-      max-width: 400px;
+      max-width: 250px;
       position: relative;
       .iphoneImg{
         overflow: hidden;
@@ -98,9 +98,9 @@
       }
       .featureScreen{
         height: auto;
-        width: 52%;
-        top: 19%;
-        left: 24.5%;
+        width: 88%;
+        top: 10.5%;
+        left: 6.5%;
         position: absolute;
         overflow: hidden;
 
@@ -141,6 +141,7 @@
             font-size: 1em;
             color: lighten($black, 20%);
             transition-duration: 0.6s;
+            font-weight: 300;
           }
 
           &.active{
