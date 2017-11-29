@@ -581,7 +581,9 @@ body {
       line-height: 140%; }
       .featuresWrapper .featuresPanel .featureWrapper .featureTitle {
         color: #CD0B24;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        margin-bottom: 35px;
+        font-size: 1.4em; }
       .featuresWrapper .featuresPanel .featureWrapper .featureDescription {
         color: #6b5b61;
         font-size: 1em;
