@@ -419,6 +419,15 @@ body {
   .btn-dark-blue:active {
     background: #010102; }
 
+.btn-white {
+  background: white;
+  transition: all 0.3s ease;
+  color: #404040; }
+  .btn-white:hover {
+    background: #ebebeb; }
+  .btn-white:active {
+    background: #bfbfbf; }
+
 .header {
   position: fixed;
   z-index: 10;
@@ -504,11 +513,11 @@ body {
   background-size: cover;
   position: relative;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 100px 20px;
   text-align: center; }
+  @media screen and (max-width: 576px) {
+    .concept {
+      padding: 40px 20px; } }
   .concept .concept-img-mask {
     background-color: rgba(0, 0, 0, 0.4);
     bottom: 0;
@@ -516,24 +525,56 @@ body {
     position: absolute;
     right: 0;
     top: 0; }
-  .concept img {
-    width: 200px;
-    margin: 30px;
-    position: relative; }
-  .concept .contentWrapper {
-    margin: 30px;
-    position: relative; }
-  .concept h1 {
-    font-weight: 300;
-    margin-bottom: 40px; }
   .concept p {
     font-weight: 300;
     max-width: 600px;
     line-height: 150%;
     font-size: 1.2em; }
-  @media screen and (max-width: 576px) {
-    .concept {
-      padding: 40px 20px; } }
+  .concept .contentWrapper {
+    margin: 60px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .concept .contentWrapper h1 {
+      font-weight: 300;
+      margin-bottom: 40px; }
+    .concept .contentWrapper img {
+      width: 200px;
+      margin: 50px; }
+  .concept .newsletterWrapper {
+    position: relative; }
+    .concept .newsletterWrapper form {
+      display: flex;
+      justify-content: center; }
+    .concept .newsletterWrapper input {
+      width: 340px;
+      appearance: none;
+      box-sizing: border-box;
+      display: inline-block;
+      outline: 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9em;
+      font-weight: 300;
+      border-radius: 5px;
+      padding: 10px 10px;
+      border: solid 1px white;
+      color: white;
+      background: transparent;
+      transition-duration: 0.5s; }
+      .concept .newsletterWrapper input::placeholder {
+        color: white; }
+      .concept .newsletterWrapper input:focus {
+        color: #333333;
+        background: white; }
+        .concept .newsletterWrapper input:focus::placeholder {
+          color: #333333; }
+    .concept .newsletterWrapper button {
+      width: 280px;
+      margin-left: 10px;
+      padding: 12px;
+      font-family: 'Montserrat';
+      font-weight: 300; }
 
 .detailedConceptWrapper {
   padding: 60px 0px; }

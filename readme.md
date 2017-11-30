@@ -1,9 +1,10 @@
-mettre plus d'espace
-bloc hygiene dans le site
+faire css newsletter
+mettre icone amran
+faire fonctionner newsletter
+faire fonctionner features
+faire navbar
 
-aggrandir icone delize
-
-faire cercle
+responsivité
 
 navbar teambump
 
