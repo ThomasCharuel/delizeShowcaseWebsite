@@ -1,21 +1,6 @@
-faire css newsletter
-mettre icone amran
-faire fonctionner newsletter
-faire fonctionner features
-faire navbar
-
-responsivité
-
 navbar teambump
 
-
-- Finir feature selector
-
-- Faire inscription newsletter
-  - Design
-  - Backend
-
-- Faire navbar
+- responsivité
 
 - content
 
@@ -28,3 +13,28 @@ navbar teambump
 - Code couleur
 
 - Valider maquettes
+
+augmenter et supprimer logo
+augmenter bienvenu 
+
+couleurs 2 parties
+
+revoir espace feature
+
+mettre animation apres validation newsletter
+changer message newsletter
+changer newsletter footer
+
+faire fonctionner features
+
+navbar
+
+mettre rond
+
+g analytics
+
+hello@delize.com
+
+
+
+animations

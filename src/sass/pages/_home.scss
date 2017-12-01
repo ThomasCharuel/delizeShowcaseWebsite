@@ -55,6 +55,9 @@
 
   .newsletterWrapper{
     position: relative;
+    .newsletterSuccess{
+      margin: auto;
+    }
     form{
       display: flex;
       justify-content: center;

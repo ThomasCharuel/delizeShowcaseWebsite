@@ -544,6 +544,8 @@ body {
       margin: 50px; }
   .concept .newsletterWrapper {
     position: relative; }
+    .concept .newsletterWrapper .newsletterSuccess {
+      margin: auto; }
     .concept .newsletterWrapper form {
       display: flex;
       justify-content: center; }

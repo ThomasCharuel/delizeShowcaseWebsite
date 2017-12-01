@@ -21,16 +21,16 @@ $(document).ready(function(){
       // Here we are using the subscribePost method which talks to the /subscribe endpoint
       // The second parameter is the body of our request, so here we will capture the email
       // provided and make the call to the API
-      client.subscribePost({}, {email: $('#email').val()}, {})
+      client.subscribePost({}, {email: email}, {})
         .then(function(data) {
-          console.dir(data)
           // If all went well, we'll display a success message, otherwise we'll display an error
           // Our Lambda response is wrapped in API Gateway's own response object, that is why we are 
           // accessing data.data object
           if(data.data.statusCode == 200){
-            alert('Add to newsletter list')
+            $('.newsletterForm').hide();
+            $('.newsletterWrapper').append('<p class="newsletterSuccess">Merci, vous êtes à présent inscrit à la newsletter Delize !</p>')
           } else {
-            alert('error add newsletter list')
+            alert('Erreur lors de l\'inscription à la newsletter, veuillez réessayer plus tard');
           }
         }
       )
