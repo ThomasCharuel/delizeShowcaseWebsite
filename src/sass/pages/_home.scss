@@ -199,8 +199,10 @@
       margin-top: 80px;
       nav{
         display: flex;
+        align-items: center;
         justify-content: space-evenly;
         .featureLink{
+          margin: 10px 20px;
           img{
             max-width: 40px;
           }
@@ -210,11 +212,14 @@
             color: lighten($black, 20%);
             transition-duration: 0.6s;
             font-weight: 300;
+            margin: 0;
+            margin-top: 10px;
           }
 
           &.active{
             h3{
               color: $red;
+              font-size: 1.3em;
             }
           }
           &:hover{

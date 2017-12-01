@@ -23,6 +23,8 @@ navbar teambump
 
 - Hébergement + domain name
 
+- Compresser js + css
+
 - Code couleur
 
 - Valider maquettes

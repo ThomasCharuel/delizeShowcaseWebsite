@@ -649,15 +649,21 @@ body {
       margin-top: 80px; }
       .featuresWrapper .featuresPanel .featuresList nav {
         display: flex;
+        align-items: center;
         justify-content: space-evenly; }
-        .featuresWrapper .featuresPanel .featuresList nav .featureLink img {
-          max-width: 40px; }
-        .featuresWrapper .featuresPanel .featuresList nav .featureLink h3 {
-          font-size: 1em;
-          color: #6b5b61;
-          transition-duration: 0.6s;
-          font-weight: 300; }
-        .featuresWrapper .featuresPanel .featuresList nav .featureLink.active h3 {
-          color: #CD0B24; }
-        .featuresWrapper .featuresPanel .featuresList nav .featureLink:hover h3 {
-          color: #9f8d94; }
+        .featuresWrapper .featuresPanel .featuresList nav .featureLink {
+          margin: 10px 20px; }
+          .featuresWrapper .featuresPanel .featuresList nav .featureLink img {
+            max-width: 40px; }
+          .featuresWrapper .featuresPanel .featuresList nav .featureLink h3 {
+            font-size: 1em;
+            color: #6b5b61;
+            transition-duration: 0.6s;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 10px; }
+          .featuresWrapper .featuresPanel .featuresList nav .featureLink.active h3 {
+            color: #CD0B24;
+            font-size: 1.3em; }
+          .featuresWrapper .featuresPanel .featuresList nav .featureLink:hover h3 {
+            color: #9f8d94; }

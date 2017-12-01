@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cd public && live-server",
     "sass": "node-sass src/sass/pages/_home.scss public/style/home.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-test": "aws s3 sync public/ s3://delize-test"
   },
   "author": "Thomas Charuel",
   "license": "ISC",
