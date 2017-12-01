@@ -14,12 +14,10 @@ navbar teambump
 
 - Valider maquettes
 
-augmenter et supprimer logo
+
 augmenter bienvenu 
 
 couleurs 2 parties
-
-revoir espace feature
 
 mettre animation apres validation newsletter
 changer message newsletter
@@ -34,7 +32,5 @@ mettre rond
 g analytics
 
 hello@delize.com
-
-
 
 animations
