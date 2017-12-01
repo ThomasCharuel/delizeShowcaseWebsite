@@ -584,36 +584,37 @@ body {
       font-family: 'Montserrat';
       font-weight: 300; }
 
-.detailedConceptWrapper {
-  padding: 60px 0px; }
-  .detailedConceptWrapper > .bloc {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 30px 20px; }
-    .detailedConceptWrapper > .bloc .contentWrapper, .detailedConceptWrapper > .bloc .imageWrapper {
-      width: 35%;
-      text-align: center; }
-      @media screen and (max-width: 576px) {
-        .detailedConceptWrapper > .bloc .contentWrapper.contentWrapper, .detailedConceptWrapper > .bloc .imageWrapper.contentWrapper {
-          width: 100%; }
-        .detailedConceptWrapper > .bloc .contentWrapper.imageWrapper, .detailedConceptWrapper > .bloc .imageWrapper.imageWrapper {
-          display: none; } }
-    .detailedConceptWrapper > .bloc .sectionTitle, .detailedConceptWrapper > .bloc p, .detailedConceptWrapper > .bloc img {
-      width: 100%;
-      margin: auto; }
-    .detailedConceptWrapper > .bloc .contentWrapper {
-      line-height: 140%; }
-      .detailedConceptWrapper > .bloc .contentWrapper .sectionTitle {
-        color: #102B3F;
-        margin-bottom: 15px; }
-      .detailedConceptWrapper > .bloc .contentWrapper p {
-        color: #6b5b61;
-        font-size: 1em;
-        font-weight: 300; }
-    .detailedConceptWrapper > .bloc .imageWrapper img {
-      border-radius: 50%; }
+.detailedConceptWrapper .foodWrapper {
+  background-color: #f9f9f9; }
+
+.detailedConceptWrapper > .bloc {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 80px 20px; }
+  .detailedConceptWrapper > .bloc .contentWrapper, .detailedConceptWrapper > .bloc .imageWrapper {
+    width: 35%;
+    text-align: center; }
+    @media screen and (max-width: 576px) {
+      .detailedConceptWrapper > .bloc .contentWrapper.contentWrapper, .detailedConceptWrapper > .bloc .imageWrapper.contentWrapper {
+        width: 100%; }
+      .detailedConceptWrapper > .bloc .contentWrapper.imageWrapper, .detailedConceptWrapper > .bloc .imageWrapper.imageWrapper {
+        display: none; } }
+  .detailedConceptWrapper > .bloc .sectionTitle, .detailedConceptWrapper > .bloc p, .detailedConceptWrapper > .bloc img {
+    width: 100%;
+    margin: auto; }
+  .detailedConceptWrapper > .bloc .contentWrapper {
+    line-height: 140%; }
+    .detailedConceptWrapper > .bloc .contentWrapper .sectionTitle {
+      color: #102B3F;
+      margin-bottom: 25px; }
+    .detailedConceptWrapper > .bloc .contentWrapper p {
+      color: #6b5b61;
+      font-size: 1em;
+      font-weight: 300; }
+  .detailedConceptWrapper > .bloc .imageWrapper img {
+    border-radius: 50%; }
 
 .featuresWrapper {
   background-color: #fbf8f1;

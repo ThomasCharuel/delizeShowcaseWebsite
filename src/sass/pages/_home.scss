@@ -104,13 +104,17 @@
 }
 
 .detailedConceptWrapper{
-  padding: 60px 0px;
+
+  .foodWrapper{
+    background-color: $light-grey;
+  }
+
   >.bloc{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 30px 20px;
+    padding: 80px 20px;
 
     .contentWrapper, .imageWrapper{
       width: 35%;
@@ -134,7 +138,7 @@
       line-height: 140%;
       .sectionTitle{
         color: $dark-blue;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
       }
       p{
         color: lighten($black, 20%);

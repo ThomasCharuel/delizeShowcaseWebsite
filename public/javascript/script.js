@@ -28,7 +28,7 @@ $(document).ready(function(){
           // accessing data.data object
           if(data.data.statusCode == 200){
             $('.newsletterForm').hide();
-            $('.newsletterWrapper').append('<p class="newsletterSuccess">Merci, vous êtes à présent inscrit à la newsletter Delize !</p>')
+            $('.newsletterWrapper').append('<p class="newsletterSuccess">Bienvenue dans la communauté des Delizers !</p>')
           } else {
             alert('Erreur lors de l\'inscription à la newsletter, veuillez réessayer plus tard');
           }

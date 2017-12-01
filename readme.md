@@ -14,12 +14,8 @@ navbar teambump
 
 - Valider maquettes
 
-
-augmenter bienvenu 
-
 couleurs 2 parties
 
-mettre animation apres validation newsletter
 changer message newsletter
 changer newsletter footer
 
@@ -27,10 +23,10 @@ faire fonctionner features
 
 navbar
 
-mettre rond
-
 g analytics
 
 hello@delize.com
 
 animations
+
+mettre rond
