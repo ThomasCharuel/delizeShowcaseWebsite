@@ -105,7 +105,7 @@
 
 .detailedConceptWrapper{
 
-  .foodWrapper{
+  .cuisinierWrapper{
     background-color: $light-grey;
   }
 
@@ -235,6 +235,7 @@
           &:hover{
             h3{
               color: lighten($black, 40%);
+              font-size: 1.3em;
             }
           }
         }

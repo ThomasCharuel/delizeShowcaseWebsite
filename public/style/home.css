@@ -584,7 +584,7 @@ body {
       font-family: 'Montserrat';
       font-weight: 300; }
 
-.detailedConceptWrapper .foodWrapper {
+.detailedConceptWrapper .cuisinierWrapper {
   background-color: #f9f9f9; }
 
 .detailedConceptWrapper > .bloc {
@@ -674,4 +674,5 @@ body {
             color: #CD0B24;
             font-size: 1.3em; }
           .featuresWrapper .featuresPanel .featuresList nav .featureLink:hover h3 {
-            color: #9f8d94; }
+            color: #9f8d94;
+            font-size: 1.3em; }
