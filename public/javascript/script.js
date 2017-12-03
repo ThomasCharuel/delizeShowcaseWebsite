@@ -35,7 +35,7 @@ var features = [
     name: 'Livraison',
     title: 'De la livraison tu ne te soucieras pas',
     content: '<p>Plutôt gourmand ? Fais-toi livrer par ton cuisinier favori. Plutôt cuistot ? Livre tes plats pour gagner plus d’argent. Si ni l’un ni l’autre ne peut se déplacer, ne vous inquiétez pas, Delize le fera pour vous.</p>',
-    screen: 'img/plan.png',
+    screen: 'img/livraison.png',
     icon: 'img/route.svg',
     iconNB: 'img/routeNB.svg'
   },
