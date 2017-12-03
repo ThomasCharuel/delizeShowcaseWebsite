@@ -13,7 +13,7 @@
 
   color: white;
 
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
 
   @media screen and (max-width: $sm-width){
@@ -137,7 +137,7 @@
     .contentWrapper{
       line-height: 140%;
       .sectionTitle{
-        color: $dark-blue;
+        color: $red;
         margin-bottom: 25px;
       }
       p{
@@ -175,15 +175,15 @@
       }
       .featureScreen{
         height: auto;
-        width: 88%;
-        top: 10.5%;
-        left: 6.5%;
+        width: 82.4%;
+        top: 12.5%;
+        left: 8.8%;
         position: absolute;
         overflow: hidden;
 
         img{
           max-width: 100%;
-          border-radius: 3px;
+          border-radius: 1px;
         }
       }
     }
@@ -229,13 +229,13 @@
           &.active{
             h3{
               color: $red;
-              font-size: 1.3em;
+              //font-size: 1.2em;
             }
           }
-          &:hover{
+          &:hover.unactive{
             h3{
-              color: lighten($black, 40%);
-              font-size: 1.3em;
+              color: $red;
+              //font-size: 1.1em;
             }
           }
         }

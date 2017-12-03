@@ -419,6 +419,14 @@ body {
   .btn-dark-blue:active {
     background: #010102; }
 
+.btn-dark-red {
+  background: #9d081c;
+  transition: all 0.3s ease; }
+  .btn-dark-red:hover {
+    background: #760615; }
+  .btn-dark-red:active {
+    background: #240206; }
+
 .btn-white {
   background: white;
   transition: all 0.3s ease;
@@ -433,30 +441,56 @@ body {
   z-index: 10;
   left: 0;
   right: 0;
-  background-color: white;
   height: 60px;
-  line-height: 60px; }
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  transition: 0.5s; }
+  .header .menu a {
+    padding: 0 35px;
+    transition: color 0.4s;
+    font-size: 1.2em; }
+  .header.is-transparent {
+    background-color: transparent;
+    box-shadow: none; }
+    .header.is-transparent .logoRed {
+      display: none; }
+    .header.is-transparent .logoWhite {
+      display: block; }
+    .header.is-transparent .menu a {
+      color: white; }
+    .header.is-transparent .menu a:hover {
+      color: #e6e6e6; }
+  .header.is-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2); }
+    .header.is-scrolled .logoRed {
+      display: block; }
+    .header.is-scrolled .logoWhite {
+      display: none; }
+    .header.is-scrolled .menu a {
+      color: #6b5b61; }
+    .header.is-scrolled .menu a:hover {
+      color: #CD0B24; }
 
 .header__logo {
   font-weight: 700;
-  padding: 0 25px;
-  float: left; }
-
-.menu {
-  float: right; }
-  .menu a {
-    padding: 0 10px; }
-  .menu a:hover {
-    color: blue; }
-
-.site-content {
-  padding-top: 60px; }
+  display: flex;
+  align-items: center; }
+  .header__logo img {
+    width: 45px;
+    height: auto;
+    transition: 0.5s; }
+    .header__logo img:hover {
+      width: 46px; }
 
 .footer {
   background: #f9f9f9;
   padding: 40px 20px; }
   .footer h2 {
-    color: #102B3F;
+    color: #CD0B24;
     text-align: center; }
   .footer p {
     text-align: center;
@@ -472,18 +506,18 @@ body {
   .footer .contactBloc .contactLink {
     margin-top: 10px;
     font-size: 1.2em;
-    color: #1a4768;
+    color: #9d081c;
     transition-duration: 0.3s; }
     .footer .contactBloc .contactLink:hover {
-      color: #256390; }
+      color: #6c0613; }
   .footer .followBloc navbar {
     margin-top: 5px; }
     .footer .followBloc navbar a {
       margin: 0px 15px;
-      color: #102B3F;
+      color: gray;
       transition-duration: 0.5s; }
       .footer .followBloc navbar a:hover {
-        color: #1a4768; }
+        color: #9d081c; }
   .footer .newsletterBloc {
     display: flex;
     flex-wrap: wrap; }
@@ -498,8 +532,8 @@ body {
       font-weight: 300;
       border-radius: 5px;
       padding: 8px 10px;
-      border: solid 1px #1a4768;
-      color: #102B3F; }
+      border: solid 1px #9d081c;
+      color: #CD0B24; }
     .footer .newsletterBloc input::placeholder {
       color: #9f8d94; }
     .footer .newsletterBloc button {
@@ -513,7 +547,7 @@ body {
   background-size: cover;
   position: relative;
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center; }
   @media screen and (max-width: 576px) {
     .concept {
@@ -607,7 +641,7 @@ body {
   .detailedConceptWrapper > .bloc .contentWrapper {
     line-height: 140%; }
     .detailedConceptWrapper > .bloc .contentWrapper .sectionTitle {
-      color: #102B3F;
+      color: #CD0B24;
       margin-bottom: 25px; }
     .detailedConceptWrapper > .bloc .contentWrapper p {
       color: #6b5b61;
@@ -632,14 +666,14 @@ body {
       height: auto; }
     .featuresWrapper .screenWrapper .iphoneContainer .featureScreen {
       height: auto;
-      width: 88%;
-      top: 10.5%;
-      left: 6.5%;
+      width: 82.4%;
+      top: 12.5%;
+      left: 8.8%;
       position: absolute;
       overflow: hidden; }
       .featuresWrapper .screenWrapper .iphoneContainer .featureScreen img {
         max-width: 100%;
-        border-radius: 3px; }
+        border-radius: 1px; }
   .featuresWrapper .featuresPanel {
     text-align: center;
     width: 500px; }
@@ -671,8 +705,6 @@ body {
             margin: 0;
             margin-top: 10px; }
           .featuresWrapper .featuresPanel .featuresList nav .featureLink.active h3 {
-            color: #CD0B24;
-            font-size: 1.3em; }
-          .featuresWrapper .featuresPanel .featuresList nav .featureLink:hover h3 {
-            color: #9f8d94;
-            font-size: 1.3em; }
+            color: #CD0B24; }
+          .featuresWrapper .featuresPanel .featuresList nav .featureLink:hover.unactive h3 {
+            color: #CD0B24; }

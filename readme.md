@@ -1,29 +1,16 @@
-navbar teambump
+- Hébergement + domain name
+- https
+
+- Cross browser compat
+- Compresser js + css
 
 - responsivité
 
-- content
+- g analytics
+- SEO
+- optimizer images
 
-- Cross browser compat
-
-- Hébergement + domain name
-
-- Compresser js + css
-
-- Code couleur
-
-- https
-
-- Valider maquettes
-
-faire fonctionner features
-
-navbar
-
-g analytics
-
-hello@delize.com
-
-animations
 
 mettre rond
+voir pour mettre fleche pour scrolldown
+voir pb du point si pas assez de place

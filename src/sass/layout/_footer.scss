@@ -4,7 +4,7 @@
   padding: 40px 20px;
 
   h2{
-    color: $dark-blue;
+    color: $red;
     text-align: center;
   }
   p{
@@ -24,11 +24,11 @@
     .contactLink{
       margin-top: 10px;
       font-size: 1.2em;
-      color: lighten($dark-blue, 10%);
+      color: darken($red, 10%);
       transition-duration: 0.3s;
 
       &:hover{
-        color: lighten($dark-blue, 20%);
+        color: darken($red, 20%);
       }
     }
   }
@@ -37,10 +37,10 @@
       margin-top: 5px;
       a{
         margin: 0px 15px;
-        color: $dark-blue;
+        color: lighten(black, 50%);
         transition-duration: 0.5s;
         &:hover{
-          color: lighten($dark-blue, 10%);
+          color: darken($red, 10%);
         }
       }
     }
@@ -59,8 +59,8 @@
       font-weight: 300;
       border-radius: 5px;
       padding: 8px 10px;
-      border: solid 1px lighten($dark-blue, 10%);
-      color: $dark-blue;
+      border: solid 1px darken($red, 10%);
+      color: $red;
     }
     input::placeholder{
       color: lighten(#342C2F, 40%);

@@ -1,47 +1,47 @@
 var features = [
   {
     name: 'Plats',
-    title: 'Plats',
-    content: '<p>Regarde les plats disponibles en fonction de tes préférences. En effet, tu pourras trier les plats en fonction du prix, du type de plat, des notes, des produits utilisés et de ton régime alimentaire.</p>',
-    screen: 'img/screen_map.png',
+    title: 'Des préférences tu auras',
+    content: '<p>Regarde les plats disponibles en fonction de tes préférences. En effet, tu pourras trier les plats en fonction du prix, de leurs types, des notes, des produits utilisés et de ton régime alimentaire.</p>',
+    screen: 'img/plats.png',
     icon: 'img/salad.svg',
     iconNB: 'img/saladNB.svg'
   },
   {
     name: 'Proximité',
-    title: 'Proximité',
-    content: '<p>L’odeur des plats de ta cuisine de tes voisins te fait saliver ? Visualise les plats à quelques pas de chez toi en direct sur une carte.</p>',
-    screen: 'img/screen_map.png',
+    title: 'A proximité tu commanderas',
+    content: '<p>La bonne odeur qui sort de la cuisine de tes voisins te fait toujours saliver ? Visualise les plats à quelques pas de chez toi en direct sur une carte.</p>',
+    screen: 'img/plan.png',
     icon: 'img/placeholder.svg',
     iconNB: 'img/placeholderNB.svg'
   },
   {
     name: 'Profil',
-    title: 'Profil',
+    title: 'Des avis tu donneras',
     content: '<p>Suis tes amis et partage tes avis avec eux. Et oui, tu pourras voir les plats consommés par chacun de tes amis, leurs notes et leurs recommandations.</p>',
-    screen: 'img/screen_map.png',
+    screen: 'img/profil.png',
     icon: 'img/chef.svg',
     iconNB: 'img/chefNB.svg'
   },
   {
     name: 'Cuisinier',
-    title: 'Cuisinier',
-    content: '<p>Ajoute tes plats sur l’application et prends les en photo. En plus de ça, tu pourras scanner les produits que tu as utilisés pour être totalement transparent envers tes clients.</p>',
-    screen: 'img/screen_map.png',
+    title: 'Transparent tu seras',
+    content: '<p>Ajoute tes plats sur l’application et prends-les en photo. En plus de ça, tu pourras scanner les produits que tu as utilisés pour être totalement transparent envers tes clients.</p>',
+    screen: 'img/AjoutDePlats.png',
     icon: 'img/kitchen-pack.svg',
     iconNB: 'img/kitchen-packNB.svg'
   },
   {
     name: 'Livraison',
-    title: 'Livraison',
-    content: '<p>Plutôt gourmand ? Fais toi livrer par ton cuisinier favori. Plutôt cuistot ? Livre tes plats pour gagner plus d’argent. Si ni l’un ni l’autre ne peut se déplacer, ne vous inquiétez pas, Delize le fera pour vous.</p>',
-    screen: 'img/screen_map.png',
+    title: 'De la livraison tu ne te soucieras pas',
+    content: '<p>Plutôt gourmand ? Fais-toi livrer par ton cuisinier favori. Plutôt cuistot ? Livre tes plats pour gagner plus d’argent. Si ni l’un ni l’autre ne peut se déplacer, ne vous inquiétez pas, Delize le fera pour vous.</p>',
+    screen: 'img/plan.png',
     icon: 'img/route.svg',
     iconNB: 'img/routeNB.svg'
   },
 ]
 
-var featureSelected = 4;
+var featureSelected = 0;
 
 function featuresRender(){
   $('.featureTitle').text(features[featureSelected].title);
@@ -49,11 +49,11 @@ function featuresRender(){
 
   $('.featuresList nav').children().each(function(i){
     if(i == featureSelected){
-      $(this).addClass('active')
+      $(this).removeClass('unactive').addClass('active')
       $(this).html('<img src="' + features[i].icon + '"/><h3>' + features[i].name + '</h3>')
     }
     else{
-      $(this).removeClass('active')
+      $(this).removeClass('active').addClass('unactive')
       $(this).html('<img src="' + features[i].iconNB + '"/><h3>' + features[i].name + '</h3>')
     }
   });
@@ -69,6 +69,17 @@ function isValidEmailAddress(emailAddress) {
 $(document).ready(function(){
 
   featuresRender();
+
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+
+    if(height  > 100) {
+      $('.header').removeClass('is-transparent').addClass('is-scrolled')
+    }
+    else{
+      $('.header').removeClass('is-scrolled').addClass('is-transparent')
+    }
+  });
 
   $('.featureLink').click(function(e){
     e.preventDefault();

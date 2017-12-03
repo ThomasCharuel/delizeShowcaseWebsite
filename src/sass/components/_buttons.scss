@@ -24,6 +24,10 @@
   @include button-bg(lighten($dark-blue, 10%));
 }
 
+.btn-dark-red{
+  @include button-bg(darken($red, 10%));
+}
+
 .btn-white{
   @include button-bg(lighten(white, 10%));
   color: lighten(black, 25%);
