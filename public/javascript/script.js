@@ -110,8 +110,8 @@ $(document).ready(function(){
           if(data.data.statusCode == 200){
             $('.newsletterForm').hide();
             $('.footer .newsletterBloc p').hide();
-            $('.footer .newsletterBloc h2').text('Bienvenue dans la communauté des Delizers !');
-            $('.newsletterWrapper').append('<p class="newsletterSuccess">Bienvenue dans la communauté des Delizers !</p>')
+            $('.footer .newsletterBloc h2').text('Bienvenue dans la communauté des Delizers!');
+            $('.newsletterWrapper').append('<p class="newsletterSuccess">Bienvenue dans la communauté des Delizers!</p>')
           }
         }
       )

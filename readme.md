@@ -1,9 +1,9 @@
 - Cross browser compat
+- g analytics
+
 - Compresser js + css
 
-- responsivité
 
-- g analytics
 - SEO
 - optimizer images
 

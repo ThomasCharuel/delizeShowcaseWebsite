@@ -174,7 +174,7 @@
   background-color: lighten($light-beige, 5%);
   padding: 80px 0px;
 
-  display: none;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -222,14 +222,29 @@
     }
     .featuresList{
       margin-top: 80px;
+
+      @media screen and (max-width: $md-width){
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
       nav{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         .featureLink{
           margin: 10px 20px;
+
+          @media screen and (max-width: $md-width){
+            margin: 5px 5px;
+          }
+
           img{
             max-width: 40px;
+
+            @media screen and (max-width: $md-width){
+              max-width: 35px;
+            }
           }
 
           h3{
@@ -239,6 +254,10 @@
             font-weight: 300;
             margin: 0;
             margin-top: 10px;
+
+            @media screen and (max-width: $md-width){
+              font-size: 0.8em;
+            }
           }
 
           &.active{
