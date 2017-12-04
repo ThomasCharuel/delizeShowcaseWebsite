@@ -17,7 +17,7 @@
   text-align: center;
 
   @media screen and (max-width: $sm-width){
-    padding: 40px 20px;
+    padding: 50px 10px;
   }
 
   .concept-img-mask{
@@ -34,6 +34,10 @@
     max-width: 800px;
     line-height: 150%;
     font-size: 1.4em;
+
+    @media screen and (max-width: $sm-width){
+      font-size: 1.1em;
+    }
   }
 
   .contentWrapper{
@@ -47,6 +51,10 @@
       font-weight: 300;
       margin-bottom: 40px;
       font-size: 2.5em;
+
+      @media screen and (max-width: $sm-width){
+        font-size: 1.5em;
+      }
     }
   }
 
@@ -65,8 +73,10 @@
     form{
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
     input{
+      margin-top: 15px;
       width: 340px;
       appearance: none;
       box-sizing: border-box;
@@ -96,9 +106,14 @@
     button{
       width: 280px;
       margin-left: 10px;
+      margin-top: 15px;
       padding: 12px;
       font-family: 'Montserrat';
       font-weight: 300;
+      @media screen and (max-width: $md-width){
+        width: 340px;
+        margin-left: 0px;
+      } 
     }
   }
 }
@@ -159,7 +174,7 @@
   background-color: lighten($light-beige, 5%);
   padding: 80px 0px;
 
-  display: flex;
+  display: none;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;

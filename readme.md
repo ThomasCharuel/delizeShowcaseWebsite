@@ -1,6 +1,3 @@
-- Hébergement + domain name
-- https
-
 - Cross browser compat
 - Compresser js + css
 
@@ -9,6 +6,9 @@
 - g analytics
 - SEO
 - optimizer images
+
+
+pb font sur pc
 
 
 mettre rond

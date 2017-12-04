@@ -3,20 +3,34 @@
   z-index: 10;
   left: 0;
   right: 0;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
 
   transition: 0.5s;
+
+  @media screen and (max-width: $sm-width){
+    padding: 0 10px;
+  }
   
   .menu{
     a{
       padding: 0 35px;
       transition: color 0.4s;
       font-size: 1.2em;
+
+      @media screen and (max-width: $md-width){
+        padding: 0 15px;
+        font-size: 1.1em;
+      }
+
+      @media screen and (max-width: $sm-width){
+        padding: 0 5px;
+        font-size: 0.9em;
+      }
     }
   }
 
