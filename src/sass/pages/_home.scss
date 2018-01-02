@@ -165,6 +165,8 @@
     .imageWrapper{
       img{
         border-radius: 50%;
+        border: 6px solid $red;
+        padding: 6px;
       }
     }
   }
@@ -218,6 +220,7 @@
         color: lighten($black, 20%);
         font-size: 1em;
         font-weight: 300;
+        min-height: 140px;
       }
     }
     .featuresList{
@@ -265,11 +268,25 @@
               color: $red;
               //font-size: 1.2em;
             }
+            img.active{
+              display: inline-block;
+            }
+            img.unactive{
+              display: none;
+            }
           }
-          &:hover.unactive{
-            h3{
-              color: $red;
-              //font-size: 1.1em;
+          &.unactive{
+            img.unactive{
+              display: inline-block;
+            }
+            img.active{
+              display: none;
+            }
+            &:hover{
+              h3{
+                color: $red;
+                //font-size: 1.1em;
+              }
             }
           }
         }

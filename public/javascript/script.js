@@ -43,6 +43,7 @@ var features = [
 
 var featureSelected = 0;
 
+// Render the features depending on if they are selected or not
 function featuresRender(){
   $('.featureTitle').text(features[featureSelected].title);
   $('.featureDescription').html(features[featureSelected].content);
@@ -50,11 +51,11 @@ function featuresRender(){
   $('.featuresList nav').children().each(function(i){
     if(i == featureSelected){
       $(this).removeClass('unactive').addClass('active')
-      $(this).html('<img src="' + features[i].icon + '"/><h3>' + features[i].name + '</h3>')
+      //$(this).html('<img src="' + features[i].icon + '"/><h3>' + features[i].name + '</h3>')
     }
     else{
       $(this).removeClass('active').addClass('unactive')
-      $(this).html('<img src="' + features[i].iconNB + '"/><h3>' + features[i].name + '</h3>')
+      //$(this).html('<img src="' + features[i].iconNB + '"/><h3>' + features[i].name + '</h3>')
     }
   });
 

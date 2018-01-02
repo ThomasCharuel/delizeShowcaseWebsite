@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110601905-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110601905-1');
+</script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +27,22 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Delize App</title>
+    <title>Delize</title>
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@DelizeApp" />
+    <meta name="twitter:creator" content="@DelizeApp" />
+
+    <!-- Facebook/LinkedIn meta tags -->
+    <meta property="og:url" content="https://delize.fr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="La cuisine s'humanise" />
+    <meta property="og:description" content="Delize est un service de mise en relation entre particuliers pour la vente de plats faits maison. Alors à vos fourneaux ou à vos fourchettes et régalez-vous!" />
+    <meta property="og:site_name" content="Delize" />
+    <meta property="og:image" content="https://delize.fr/img/food.png" />
+    <meta property="og:locale" content="fr_FR" />
+    
   </head>
   <body>
     <header class="header is-transparent">
@@ -41,7 +66,7 @@
 
         <div class="newsletterWrapper">
           <form class="newsletterForm">
-            <input type="email" placeholder="Entrez votre email..."/>
+            <input type="email" placeholder="Entre ton email..."/>
             <button class="btn btn-white" type="submit">Suivre l'aventure Delize</button>
           </form>
         </div>
@@ -51,8 +76,8 @@
       <div class="detailedConceptWrapper" id="detailedConcept">
         <div class="bloc cuisinierWrapper">
           <div class="contentWrapper">
-            <h3 class="sectionTitle">Vous avez toujours voulu être chef?</h2>
-            <p>Delize est une opportunité pour vous de joindre l'utile à l'agréable. À votre cuisine, revêtez votre toque et vendez votre plat en un claquement de doigts! Notre communauté de consommateurs a déjà hâte de goûter votre oeuvre culinaire.</p>
+            <h3 class="sectionTitle">Tu as toujours voulu être chef?</h2>
+            <p>Delize est l'opportunité pour joindre l'utile à l'agréable. À ta cuisine, revêts ta toque et vends ton plat en un claquement de doigts! Notre communauté de consommateurs a déjà hâte de goûter tes oeuvres culinaires.</p>
           </div>
           <div class="imageWrapper">
             <img src="img/cuisinier.png"/>
@@ -64,7 +89,7 @@
           </div>
           <div class="contentWrapper">
             <h3 class="sectionTitle">Une petite faim?</h2>
-            <p>Delize est une solution digitale, qui s'assure de trouver un plat à votre convenance, rapidement, à prix imbattable, quand vous le voulez et où que vous soyez. Laissez-vous guider par votre doigt!</p>
+            <p>Delize est une solution digitale, qui s'assure de trouver un plat à ta convenance, rapidement, à prix imbattable, quand tu le veux et où que tu sois. Laisse-toi guider par nos propositions!</p>
           </div>
         </div>
       </div>
@@ -76,11 +101,31 @@
           </div>
           <div class="featuresList">
             <nav>
-              <a href="#" id="feature0" class="featureLink"></a>
-              <a href="#" id="feature1" class="featureLink"></a>
-              <a href="#" id="feature2" class="featureLink"></a>
-              <a href="#" id="feature3" class="featureLink"></a>
-              <a href="#" id="feature4" class="featureLink"></a>
+              <a href="#" id="feature0" class="featureLink">
+                <img src="img/salad.svg" class="active" />
+                <img src="img/saladNB.svg" class="unactive" />
+                <h3>Plats</h3>
+              </a>
+              <a href="#" id="feature1" class="featureLink">
+                <img src="img/placeholder.svg" class="active" />
+                <img src="img/placeholderNB.svg" class="unactive" />
+                <h3>Proximité</h3>
+              </a>
+              <a href="#" id="feature2" class="featureLink">
+                <img src="img/chef.svg" class="active" />
+                <img src="img/chefNB.svg" class="unactive" />
+                <h3>Profil</h3>
+              </a>
+              <a href="#" id="feature3" class="featureLink">
+                <img src="img/kitchen-pack.svg" class="active" />
+                <img src="img/kitchen-packNB.svg" class="unactive" />
+                <h3>Cuisinier</h3>
+              </a>
+              <a href="#" id="feature4" class="featureLink">
+                <img src="img/route.svg" class="active" />
+                <img src="img/routeNB.svg" class="unactive" />
+                <h3>Livraison</h3>
+              </a>
             </nav>
           </div>
         </div>
@@ -95,13 +140,13 @@
     <footer class="footer">
 
       <div class="bloc contactBloc" id="contact">
-        <h2>Contactez-nous</h2>
-        <p>Si vous avez des questions, des suggestions, des avis, des conseils ou bien des recettes secrètes, n'hésitez pas à nous contacter</p>
+        <h2>Contacte-nous</h2>
+        <p>Si tu as des questions, des suggestions, des avis, des conseils ou bien des recettes secrètes, n'hésites pas à nous contacter</p>
         <a class="contactLink" href="mailto:delizeapp@gmail.com">delizeapp@gmail.com</a>
       </div>
 
       <div class="bloc followBloc">
-        <h2>Suivez-nous</h2>
+        <h2>Suis-nous</h2>
         <navbar>
           <a class="fa fa-instagram fa-2x" href="https://www.instagram.com/delizeapp/"></a>
           <a class="fa fa-facebook fa-2x" href="https://www.facebook.com/delizeapp/"></a>
@@ -111,10 +156,10 @@
       </div>
 
       <div class="bloc newsletterBloc">
-        <h2>Inscrivez-vous à notre newsletter</h2>
-        <p>Tenez-vous au courant de nos dernières avancées</p>
+        <h2>Inscris-toi à notre newsletter</h2>
+        <p>Tiens-toi au courant de nos dernières avancées</p>
         <form class="newsletterForm">
-          <input type="email" placeholder="Entrez votre email..."/>
+          <input type="email" placeholder="Entre ton email..."/>
           <button class="btn btn-dark-red" type="submit">S'inscrire</button>
         </form>
       </div>
