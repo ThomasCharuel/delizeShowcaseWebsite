@@ -58,8 +58,15 @@ function featuresRender(){
       //$(this).html('<img src="' + features[i].iconNB + '"/><h3>' + features[i].name + '</h3>')
     }
   });
-
-  $('.featureScreen').html('<img src=' + features[featureSelected].screen + ' />');
+  $('.featureScreen').children().each(function(i){
+    if(i == featureSelected){
+      $(this).show();
+    }
+    else{
+      $(this).hide();
+    }
+  });
+  //$('.featureScreen').html('<img src=' + features[featureSelected].screen + ' />');
 }
 
 function isValidEmailAddress(emailAddress) {
